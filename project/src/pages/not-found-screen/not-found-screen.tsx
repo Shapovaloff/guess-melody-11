@@ -1,8 +1,12 @@
+import {Helmet} from 'react-helmet-async';
 import Logo from '../../components/logo/logo';
 
 function NotFoundScreen(): JSX.Element {
   return (
     <section className="game">
+      <Helmet>
+        <title>Угадай мелодию. Страница не найдена</title>
+      </Helmet>
       <header className="game__header">
         <Logo />
 
