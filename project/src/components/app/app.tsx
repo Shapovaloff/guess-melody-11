@@ -9,12 +9,14 @@ import NotFoundScreen from '../../pages/not-found-screen/not-found-screen';
 import WelcomeScreen from '../../pages/welcome-screen/welcome-screen';
 import WinScreen from '../../pages/win-screen/win-screen';
 import PrivateRoute from '../private-route/private-route';
+import { Questions } from '../../types/question';
 
 type AppScreenProps = {
   errorsCount: number;
+  questions: Questions;
 }
 
-function App({errorsCount}: AppScreenProps): JSX.Element {
+function App({errorsCount, questions}: AppScreenProps): JSX.Element {
   return (
     <HelmetProvider>
       <BrowserRouter>
